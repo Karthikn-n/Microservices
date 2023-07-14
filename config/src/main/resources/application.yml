@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: congif-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configurations
+  profiles:
+    active: native
